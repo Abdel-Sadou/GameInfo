@@ -1,0 +1,26 @@
+<div class="search-container">
+  <div *ngIf="loaderService.isLoading|async" class="loader-container">
+    <mat-progress-bar mode="query"></mat-progress-bar>
+  </div>
+  <form action="" class="search-form" #f="ngForm" (ngSubmit)="onSubmit(f)">
+   <span class="logo" routerLink="/">ASJEUX 237</span>
+    <input
+      class="search-input"
+      name="search"
+      ngModel
+      placeholder="Search 500,000+ games"
+    >
+    <button class="search-button">Search</button>
+  </form>
+
+    <input type="checkbox" id="check">
+    <label for="check" class="checkbtn">
+      <i class="fas fa-bars"></i>
+    </label>
+
+  <ul class="nav">
+    <li routerLinkActive="active"><a href="#"><i style="margin-right: 10px" class="fas fa-light  fa-info "></i>About</a></li>
+    <li  routerLinkActive="active"><a href="#"><i style="margin-right: 10px" class=" fas fa-duotone fa-phone"></i>Contact</a></li>
+    <li  routerLinkActive="active"><a href="#"><i style="margin-right: 10px" class=" fas fa-duotone fa-folder-open"></i>Portfolio</a></li>
+  </ul>
+</div>
