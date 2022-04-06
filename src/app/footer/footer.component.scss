@@ -1,0 +1,15 @@
+
+.footer{
+  text-align: center;
+  color: white;
+}
+a{
+  width: 100px;
+  margin: 20px;
+  text-decoration: none;
+  color: white;
+  transition: .5s ease;
+  &:hover{
+    border-bottom: 2px solid #3f51b5;
+  }
+  }
