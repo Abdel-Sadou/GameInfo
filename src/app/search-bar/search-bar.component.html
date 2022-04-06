@@ -15,12 +15,12 @@
 
     <input type="checkbox" id="check">
     <label for="check" class="checkbtn">
-      <i class="fas fa-bars"></i>
+      <fa-icon [icon]="faBars"></fa-icon>
     </label>
 
   <ul class="nav">
-    <li routerLinkActive="active"><a href="#"><i style="margin-right: 10px" class="fas fa-light  fa-info "></i>About</a></li>
-    <li  routerLinkActive="active"><a href="#"><i style="margin-right: 10px" class=" fas fa-duotone fa-phone"></i>Contact</a></li>
-    <li  routerLinkActive="active"><a href="#"><i style="margin-right: 10px" class=" fas fa-duotone fa-folder-open"></i>Portfolio</a></li>
+    <li routerLinkActive="active"><a href="#"> <fa-icon style="margin-right: 10px" [icon]="iconfaInfo"></fa-icon>About</a></li>
+    <li  routerLinkActive="active"><a href="#"><fa-icon style="margin-right: 10px" [icon]="faPhone"></fa-icon>Contact</a></li>
+    <li  routerLinkActive="active"><a href="#"><fa-icon style="margin-right: 10px" [icon]="faFolderOpen"></fa-icon>Portfolio</a></li>
   </ul>
 </div>
