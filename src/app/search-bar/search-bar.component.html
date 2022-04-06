@@ -2,8 +2,8 @@
   <div *ngIf="loaderService.isLoading|async" class="loader-container">
     <mat-progress-bar mode="query"></mat-progress-bar>
   </div>
+  <img src="assets/images/platforms/favicon%20(2).jpg"  class="logo" routerLink="/">
   <form action="" class="search-form" #f="ngForm" (ngSubmit)="onSubmit(f)">
-   <span class="logo" routerLink="/">ASJEUX 237</span>
     <input
       class="search-input"
       name="search"
@@ -19,7 +19,7 @@
     </label>
 
   <ul class="nav">
-    <li routerLinkActive="active"><a href="#"> <fa-icon style="margin-right: 10px"  [icon]="iconfaInfo"></fa-icon>About</a></li>
+    <li routerLinkActive="active"><a href="#"> <fa-icon style="margin-right: 10px" [icon]="iconfaInfo"></fa-icon>About</a></li>
     <li  routerLinkActive="active"><a href="#"><fa-icon style="margin-right: 10px" [icon]="faPhone"></fa-icon>Contact</a></li>
     <li  routerLinkActive="active"><a href="#"><fa-icon style="margin-right: 10px" [icon]="faFolderOpen"></fa-icon>Portfolio</a></li>
   </ul>
